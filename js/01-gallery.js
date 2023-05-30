@@ -44,3 +44,9 @@ function handlerClick(evt) {
     instance.show()
 }
  
+function handlerEsc(evt) {
+    if (evt.code === 'Escape') {
+        console.log ('Escape');
+        this.close()
+    }
+}
