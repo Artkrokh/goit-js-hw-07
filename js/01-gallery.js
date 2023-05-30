@@ -21,4 +21,4 @@ function createMarkup(arr) {
  gallery.insertAdjacentHTML('beforeend', createMarkup(galleryItems))
  gallery.addEventListener('click', handlerClick);
 
- 
+
