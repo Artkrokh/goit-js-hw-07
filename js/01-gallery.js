@@ -32,7 +32,8 @@ function handlerClick(evt) {
 `,{
         handlerEscape: null,
         onShow(instance) {
-            this.handlerEscape = 
+            this.handlerEscape = handlerEsc.bind(instance)
+            
         }
 
     })
