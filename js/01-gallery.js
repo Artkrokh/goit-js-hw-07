@@ -24,6 +24,17 @@ function createMarkup(arr) {
 function handlerClick(evt) {
     evt.preventDefault();
 
-    if
+    if (evt.target === evt.currentTarget) {
+        return;
+    }
+    const instance = basicLightbox.create(`
+    <div><img src="${evt.target.dataset.source}" alt="${evt.target.alt}"></div>
+`,{
+        handlerEscape: null,
+        onShow(instance) {
+            this.handlerEscape = 
+        }
+
+    })
 }
  
