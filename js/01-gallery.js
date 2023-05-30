@@ -18,3 +18,7 @@ function createMarkup(arr) {
     </li > `).join('');
      return markup
 }
+ gallery.insertAdjacentHTML('beforeend', createMarkup(galleryItems))
+ gallery.addEventListener('click', handlerClick);
+
+ 
