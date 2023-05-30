@@ -33,9 +33,12 @@ function handlerClick(evt) {
         handlerEscape: null,
         onShow(instance) {
             this.handlerEscape = handlerEsc.bind(instance)
-            
+            document.addEventListener('keydown', this.handlerEscape)
+        },
+        onClose() {
+            document.removeEventListener('keydown', this.handlerEscape)
         }
 
-    })
+    });
 }
  
