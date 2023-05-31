@@ -47,7 +47,7 @@ function handlerClick(evt) {
       },
     }
   );
-
+  
   instance.show();
 }
 
